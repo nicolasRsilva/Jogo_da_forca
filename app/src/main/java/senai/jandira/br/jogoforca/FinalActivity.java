@@ -13,6 +13,8 @@ public class FinalActivity extends Activity {
     Bundle pontos;
     int acerto, erro;
     TextView sair, acertos, erros;
+    String palavra;
+    String palavraAcert;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -30,8 +32,20 @@ public class FinalActivity extends Activity {
         acertos = findViewById(R.id.acerto);
         erros = findViewById(R.id.erro);
 
-        acertos.setText("Qtd.Acertos "+ acerto);
-        erros.setText("Qtd.Erros "+ erro);
+        if(erro > 1){
+            palavra = " palavras";
+        }else{
+            palavra = " palavra";
+        }
+
+        if(acerto > 1){
+            palavraAcert = " palavras";
+        }else{
+            palavraAcert = " palavra";
+        }
+
+        acertos.setText(acerto + palavraAcert);
+        erros.setText(erro + palavra);
 
 
         sair = findViewById(R.id.sair);

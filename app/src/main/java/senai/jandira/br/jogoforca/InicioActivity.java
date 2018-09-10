@@ -17,7 +17,7 @@ public class InicioActivity extends Activity {
 
     }
 
-    public void os8(View v){
+    public void easteregg (View v){
         ImageView imgs = (ImageView) findViewById(R.id.os8);
         imgs.setImageResource(R.drawable.os8);
     }

@@ -169,7 +169,7 @@ public class MainActivity extends Activity {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle(titulo);
         alert.setMessage(msg);
-
+        alert.setCancelable(false);
         alert.setPositiveButton("Próximo", new Dialog.OnClickListener(){
 
             @Override
@@ -180,6 +180,7 @@ public class MainActivity extends Activity {
         });
 
         alert.create().show();
+
     }
 
 

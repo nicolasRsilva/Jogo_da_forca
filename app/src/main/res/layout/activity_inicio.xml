@@ -25,6 +25,8 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:src="@drawable/forca"
+            android:id="@+id/os8"
+            android:onClick="os8"
             />
 
         <Button
